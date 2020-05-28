@@ -1,0 +1,253 @@
+:root {
+  --dark-grey-color: #202020;
+  --black-color: #181818;
+  --blue-color: #2087ff;
+  --red-color: #cc0000;
+  --light-grey-color: #909090;
+  --white-color: #ffffff;
+
+  --padding: 19px;
+
+  --text-large-size: 18px;
+  --text-medium-size: 15px;
+  --text-small-size: 13px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--black-color);
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--dark-grey-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+
+header .leftbar {
+  font-size: var(--text-large-size);
+  color: var(--white-color);
+}
+
+header .leftbar .fa-youtube {
+  color: var(--red-color);
+}
+
+header .leftbar .fa-bars {
+  margin-right: 10px;
+}
+
+header .rightbar {
+  font-size: var(--text-large-size);
+}
+
+header .rightbar i {
+  margin-left: 10px;
+  color: var(--white-color);
+}
+
+.player {
+  margin: var(--padding);
+}
+.player video {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding);
+}
+
+.main .hashtag a {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-size: var(--text-small-size);
+}
+
+.main .title {
+  color: var(--white-color);
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: var(--text-large-size);
+}
+
+.main .subtitle {
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-grey-color);
+  margin: var(--padding) 0;
+}
+
+.main .subtitle .views {
+  font-size: var(--text-medium-size);
+}
+
+.main .subtitle .actions span {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  border-top: 1px solid var(--light-grey-color);
+  border-bottom: 1px solid var(--light-grey-color);
+  padding: var(--padding) 0;
+}
+
+.channel .info .channelName img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.channel .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.channel .info .channelName {
+  display: flex;
+  align-items: center;
+}
+
+.channel .info .channelName .channelNaming {
+  font-size: var(--text-medium-size);
+}
+
+.channel .info .channelName .channelSubscribe {
+  font-size: var(--text-small-size);
+  color: var(--light-grey-color);
+}
+
+.channel .info .channelName .subscriber {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .info .channelBtn {
+  color: var(--white-color);
+}
+
+.channel .info .channelBtn button {
+  width: 73px;
+  height: 40px;
+}
+
+.channel .info .channelBtn .register {
+  margin-right: 5px;
+  background-color: var(--black-color);
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  border-radius: 3px;
+}
+
+.channel .info .channelBtn .subscribe {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: 1px solid var(--red-color);
+  border-radius: 3px;
+}
+
+.channel .explaination {
+  margin: 13px 62px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: var(--text-medium-size);
+}
+
+.channel .add {
+  color: var(--light-grey-color);
+  padding: 0 62px;
+  font-size: var(--text-small-size);
+}
+
+.list {
+  padding: var(--padding);
+}
+
+.list .upnext {
+  font-size: var(--text-medium-size);
+  color: var(--white-color);
+}
+
+.list ul {
+  margin-top: 14px;
+}
+
+.list .fuckyou {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.list .fuckyou .ing {
+  flex: 1 1 40%;
+}
+
+.list .fuckyou .ing img {
+  width: 100%;
+}
+
+.list .fuckyou .sibar {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  margin-left: 10px;
+}
+
+.list .fuckyou .sibar .chlist {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: var(--text-medium-size);
+}
+
+.list .fuckyou .sibar .chname {
+  font-size: var(--text-small-size);
+  color: var(--light-grey-color);
+}
+.list .fuckyou .sibar .chview {
+  font-size: var(--text-small-size);
+  color: var(--light-grey-color);
+}
+
+@media screen and (min-width: 1000px) {
+  .reallast {
+    display: flex;
+  }
+  .reallast .left {
+    flex: 1 1 75%;
+  }
+  .reallast .list {
+    flex: 1 1 25%;
+  }
+
+  .reallast {
+    margin-left: 80px;
+  }
+  .list {
+    margin-right: 80px;
+  }
+}
