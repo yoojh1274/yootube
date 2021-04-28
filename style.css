@@ -78,7 +78,7 @@ form {
   padding: 20px 0;
   position: relative;
   z-index: 2;
-  text-align: center;
+  margin:0 auto;
 }
 form input {
   appearance: none;
