@@ -13,7 +13,7 @@
 		<form class="form">
 			<input type="text" placeholder="Username">
 			<input type="password" placeholder="Password">
-			<button type="submit" id="login-button">Login</button>
+			<button type="submit" onclick="gopage()" id="login-button">Login</button>
 		</form>
 	</div>
 
@@ -30,6 +30,16 @@
 		<li></li>
 	</ul>
   </div>
-  <script src="login.js"></script>
+<script type="text/javascript">
+function gopage() {
+	// 자바스크립트로 링크 이동하기 : location.href
+	location.href = "youtube.html";
+	// form에서는 페이지 이동 전에 데이터가 들어있는지 확인이 번거롭다.
+	// 데이터를 확인하고 그 데이터를 가지고 링크를 이동하기 위해서는 
+	// 자바스크립트에서 데이터 확인을 거치고 직접 보내주는 것이 좋다
+	
+	
+}
+</script>
 </body>
 </html>
